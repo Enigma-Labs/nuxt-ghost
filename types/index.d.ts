@@ -21,6 +21,14 @@ declare module '@nuxt/types' {
   interface NuxtAppOptions {
     $ghost: GhostAPI;
   }
+
+  interface NuxtConfig {
+    ghost?: {
+      url: string;
+      key: string;
+      version?: string;
+    }
+  }
 }
 
 declare module 'vue/types/vue' {
